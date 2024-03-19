@@ -1,0 +1,14 @@
+spring:
+  port: 8000
+  ssl:
+    key-store: MAKING_PATH
+    key-store-type: PKCS12
+    key-store-password: MASKING_PASSWORD
+  application:
+    name: gateway
+  profiles:
+    active: dev
+  config:
+    import: optional:configserver:http://MASTER:8888
+  cloud:
+    gateway:

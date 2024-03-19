@@ -1,0 +1,15 @@
+.border.active {
+    display: inline-block;
+    background-color: "#126F54";
+    border-radius: "15px";
+    box-sizing: "15px";
+    margin-right: "4px";
+}
+
+.border {
+    display: inline-block;
+    background-color: "#000000";
+    border-radius: "15px";
+    box-sizing: "15px";
+    margin-right: "4px";
+}

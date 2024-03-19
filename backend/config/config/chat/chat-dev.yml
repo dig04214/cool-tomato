@@ -1,0 +1,63 @@
+server:
+    port: 8085
+
+spring:
+    application:
+        name: chat
+    datasource:
+        url: jdbc:mysql://MASKING_URL
+        username: MAKING_USERNAME
+        password: MASKING_PASSWORD
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                format_sql: true
+    devtools:
+        livereload:
+            enabled: true
+        restart:
+            enabled: true
+    freemarker:
+        cache: false
+        template-loader-path: classpath:/templates
+        suffix: .ftl
+    cloud:
+        openfeign:
+        okhttp:
+            enabled: true
+    kafka:
+        bootstrap-servers: localhost:9092
+        template:
+            default-topic: chat
+        consumer:
+            group-id: ${random.uuid}
+
+logging.level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
+
+eureka:
+    instance:
+        disable-delta: true
+        instance-id: ${spring.cloud.client.hostname}:${spring.application.instance_id:${random.value}}
+        lease-renewal-interval-in-seconds: 3
+        lease-expiration-duration-in-seconds: 10
+    client:
+        register-with-eureka: true
+        fetch-registry: true
+        service-url:
+            defaultZone: http://MASTER:8761/eureka/
+
+redis:
+    master:
+        host: MASTER
+        port: 6379
+    nodes:
+        - host: SN01
+          port: 6379
+        - host: SN02
+          port: 6379
+    password: MAKING_PASSWORD

@@ -1,0 +1,186 @@
+[33mcommit 2b0ea0a892207069fc8aa4df3d65aa8cf529473a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mFE]-feature-/-NAV[m[33m)[m
+Author: 박호철 <didifia9850@naver.com>
+Date:   Wed Jan 17 15:33:04 2024 +0900
+
+    Feat: Footer 완성
+
+[33mcommit 5076fd2641bb68be348048f1b4919031ca8172aa[m[33m ([m[1;31morigin/FE]-feature-/-NAV[m[33m)[m
+Merge: 0bd5bd7 85a1176
+Author: Ho Cheol Park <74571069+Hocheol18@users.noreply.github.com>
+Date:   Wed Jan 17 14:32:59 2024 +0900
+
+    Merge pull request #6 from WP501/develop
+    
+    [FE] Feat: First Develop Pull Request
+
+[33mcommit 85a11766a5fcae049644424e9b14bb16ca5c91c8[m[33m ([m[1;31morigin/develop[m[33m)[m
+Merge: 84d5ee3 0ecb10f
+Author: dig04214 <81416039+dig04214@users.noreply.github.com>
+Date:   Wed Jan 17 14:29:46 2024 +0900
+
+    Merge pull request #5 from WP501/feature/login_page
+    
+    테마 관련 코드 병합
+
+[33mcommit 0ecb10f930bffeca69d3f3ba822586a9195bf8b9[m[33m ([m[1;31morigin/feature/login_page[m[33m)[m
+Author: dig04214 <dig04214@naver.com>
+Date:   Wed Jan 17 14:28:21 2024 +0900
+
+    refactor: 색, 폰트, 테마 관련 파일 하나로 정리
+    색은 여러 군데에서 사용할 수 있기에 따로 분리
+
+[33mcommit 21eb08329d7f86517b7e609b6ff6598c56239234[m
+Merge: ad42f11 93b9d53
+Author: dig04214 <dig04214@naver.com>
+Date:   Wed Jan 17 13:58:44 2024 +0900
+
+    Merge branch 'feature/login_page' of https://github.com/WP501/frontend into feature/login_page
+
+[33mcommit ad42f1179ba1ef4b6b7161f71668dd9791b5f01a[m
+Author: dig04214 <dig04214@naver.com>
+Date:   Wed Jan 17 13:52:53 2024 +0900
+
+    Feat: 로그인 페이지 UI 구현
+    앞으로 해야할 것 : axios로 백이랑 api 연결하기, LoginNavigate 에서 각 페이지로 넘어가게 링크 만들기
+
+[33mcommit 93b9d531bd0c97dff53645deda4ccac4b5e06d7f[m
+Merge: 31cfec3 84d5ee3
+Author: dig04214 <81416039+dig04214@users.noreply.github.com>
+Date:   Wed Jan 17 13:51:55 2024 +0900
+
+    Merge pull request #4 from WP501/develop
+    
+    develop -> login_page
+
+[33mcommit 84d5ee35ce88ce7f6269e713999b478de4d3963d[m
+Merge: 4818781 0bd5bd7
+Author: Ho Cheol Park <74571069+Hocheol18@users.noreply.github.com>
+Date:   Wed Jan 17 13:50:10 2024 +0900
+
+    Merge pull request #3 from WP501/FE]-feature-/-NAV
+    
+    [FE] First Develop
+
+[33mcommit 0bd5bd7a6be3033286d630344ea5d2614c7b57b7[m
+Merge: d9481b4 f20018e
+Author: Ho Cheol Park <74571069+Hocheol18@users.noreply.github.com>
+Date:   Wed Jan 17 13:39:17 2024 +0900
+
+    Merge pull request #2 from WP501/feature/buyer
+    
+    Feat: 면지 buyer Page Pull request
+
+[33mcommit f20018e4e36b1c24df95fc6679415c2f4a094deb[m
+Author: 김현지 <hanguel97@gmail.com>
+Date:   Wed Jan 17 13:34:15 2024 +0900
+
+    feat: APP.tsx 수정2
+
+[33mcommit d9481b41f97d7dd8d4f209fd051be76533bd2a76[m
+Author: 박호철 <didifia9850@naver.com>
+Date:   Wed Jan 17 13:31:55 2024 +0900
+
+    Feat: Footer V0
+
+[33mcommit 0a2c13b918d8c7416e756056bf04ef4aec3e3469[m
+Merge: fb7dd34 2bcd8d7
+Author: 김현지 <hanguel97@gmail.com>
+Date:   Wed Jan 17 13:12:32 2024 +0900
+
+    ✨ Feat: App.tsx 변경
+
+[33mcommit fb7dd342209af6a397acb256c5d6fda8f46dab36[m
+Author: 김현지 <hanguel97@gmail.com>
+Date:   Wed Jan 17 13:09:50 2024 +0900
+
+    ✨ Feat: 판매자 페이지 생성
+
+[33mcommit 2bcd8d79512436229ed16e88cd359a6452209ecc[m
+Author: 박호철 <didifia9850@naver.com>
+Date:   Wed Jan 17 10:45:08 2024 +0900
+
+    Feat: NavBar 수정
+
+[33mcommit fe57b7be2ee3c141cea96529a3057fd3c8adbe4e[m
+Merge: 9a0d4c4 c434382
+Author: 박호철 <didifia9850@naver.com>
+Date:   Wed Jan 17 10:18:24 2024 +0900
+
+    feat: merge 해결
+
+[33mcommit 9a0d4c486849a93ae3df283212056be673c04eff[m
+Author: 박호철 <didifia9850@naver.com>
+Date:   Wed Jan 17 10:13:41 2024 +0900
+
+    Feat: NavBar 수정
+
+[33mcommit c4343829f45e60ac3212ccdc718be30204c16db4[m
+Merge: ab0817d 84aeffa
+Author: Ho Cheol Park <74571069+Hocheol18@users.noreply.github.com>
+Date:   Wed Jan 17 10:12:32 2024 +0900
+
+    Merge pull request #1 from WP501/feature/buyer
+    
+    Feat 면지 기능 Pull Request
+
+[33mcommit 84aeffa5c8b5ee2926b389d26b61715900ee638a[m
+Merge: ef68507 ab0817d
+Author: 김현지 <hanguel97@gmail.com>
+Date:   Wed Jan 17 10:00:42 2024 +0900
+
+    ✨ Feat: 네브바 추가
+
+[33mcommit ef68507a181fae41a9ec4d04995fd4c8dde7d8ed[m
+Author: 김현지 <hanguel97@gmail.com>
+Date:   Wed Jan 17 09:58:14 2024 +0900
+
+    ✨ Feat: 리드미 추가
+
+[33mcommit 256cbb28881a4d84d976c59d52be764a58f15730[m
+Author: 김현지 <hanguel97@gmail.com>
+Date:   Wed Jan 17 09:57:50 2024 +0900
+
+    ✨ Feat:  폰트 적용
+
+[33mcommit ab0817d99c5430f386363d87ce633c9e005899ed[m
+Author: 박호철 <didifia9850@naver.com>
+Date:   Wed Jan 17 09:12:36 2024 +0900
+
+    Feat: Nav 초기 세팅
+
+[33mcommit 51c0dbf902e6a7670ee545e1ba41d59e6c9781f6[m
+Author: 김현지 <hanguel97@gmail.com>
+Date:   Tue Jan 16 18:04:00 2024 +0900
+
+    ✨ Feat: 구매자 마이페이지  요소 삽입
+
+[33mcommit df608aa3a0c63e6ba57b4fcb213738b56e3b23cf[m
+Merge: 79f5371 31cfec3
+Author: 김현지 <hanguel97@gmail.com>
+Date:   Tue Jan 16 17:22:45 2024 +0900
+
+    Merge branch 'feature/login_page' of https://github.com/WP501/frontend into feature/buyer
+
+[33mcommit 79f53715eeb678401908c35907b5c40a5742faa3[m
+Author: 김현지 <hanguel97@gmail.com>
+Date:   Tue Jan 16 16:14:26 2024 +0900
+
+    ✨ Feat: 구매자 마이페이지를 위한 컴포넌트 추가
+
+[33mcommit 31cfec371d66a7d0f1c64f27880fc8190ed73f0b[m
+Author: dig04214 <dig04214@naver.com>
+Date:   Tue Jan 16 14:17:05 2024 +0900
+
+    ✨ Feat: 로그인 페이지를 위한 컴포넌트 추가
+
+[33mcommit 4818781bcf484a95460e80d1bc3daee7e6e4f495[m[33m ([m[1;31morigin/release[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: 박호철 <didifia9850@naver.com>
+Date:   Tue Jan 16 11:14:30 2024 +0900
+
+    🎉 init: 프로젝트 초기세팅
+
+[33mcommit c608a22f8130cec222ce00853e026e7b08bfbced[m
+Author: 박호철 <didifia9850@naver.com>
+Date:   Tue Jan 16 11:09:24 2024 +0900
+
+    first commit
