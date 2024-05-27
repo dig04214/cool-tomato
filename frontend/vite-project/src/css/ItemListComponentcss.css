@@ -1,0 +1,36 @@
+.MainText {
+    font-family: 'GmkBold';
+    font-size: 6rem;
+}
+
+.img {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.Text {
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.TextTitle {
+    font-size: large;
+    font-weight: bold;
+}
+
+.TextContent {
+    font-size: medium;
+}
+
+.tagWrap {
+    font-size: medium;
+    font-weight: bold;
+}
+
+hr {
+    width: 70%;
+    height: 1rem;
+    background-color: #000000;
+}

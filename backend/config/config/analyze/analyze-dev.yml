@@ -1,0 +1,48 @@
+server:
+    port: 8087
+
+spring:
+    application:
+        name: analyze
+    datasource:
+        url: jdbc:mysql://MASKING_URL
+        username: MAKING_USERNAME
+        password: MASKING_PASSWORD
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                format_sql: true
+
+logging.level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
+
+openvidu:
+    url: MASKING_URL
+    password: MASKING_PASSWORD
+
+eureka:
+    instance:
+        disable-delta: true
+        instance-id: ${spring.cloud.client.hostname}:${spring.application.instance_id:${random.value}}
+        lease-renewal-interval-in-seconds: 3
+        lease-expiration-duration-in-seconds: 10
+    client:
+        register-with-eureka: true
+        fetch-registry: true
+        service-url:
+            defaultZone: http://MASTER:8761/eureka/
+
+redis:
+    master:
+        host: MASTER
+        port: 6379
+    nodes:
+        - host: SN01
+          port: 6379
+        - host: SN02
+          port: 6379
+    password: MAKING_PASSWORD

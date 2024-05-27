@@ -1,0 +1,91 @@
+server:
+    port: 443
+    ssl:
+        key-store: MASKING_PATH
+        key-store-type: PKCS12
+        key-store-password: MASKING_PASSWORD
+
+eureka:
+    instance:
+        lease-renewal-interval-in-seconds: 5
+        lease-expiration-duration-in-seconds: 10
+    client:
+        registry-fetch-interval-seconds: 3
+        disable-delta: true
+        register-with-eureka: true
+        fetch-registry: true
+        service-url:
+            defaultZone: http://MASTER:8761/eureka
+
+spring:
+    cloud:
+        gateway:
+            default-filters:
+                - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials
+            globalcors:
+                add-to-simple-url-handler-mapping: true
+                corsConfigurations:
+                    "[/**]":
+                        allowedOrigins:
+                            - "MASKING_URL"
+                            - "MASKING_URL"
+                            - "MASKING_URL"
+                        allow-credentials: true
+                        allowedHeaders: "*"
+                        exposedHeaders: "*"
+                        allowedMethods:
+                            - POST
+                            - GET
+                            - PUT
+                            - PATCH
+                            - DELETE
+                            - OPTIONS
+            routes:
+                - id: auth
+                  uri: lb://AUTH
+                  predicates:
+                      - Path=/v1/auth/**
+                - id: broadcast
+                  uri: lb://BROADCAST
+                  predicates:
+                      - Path=/v1/live/**
+                - id: product
+                  uri: lb://PRODUCT
+                  predicates:
+                      - Path=/v1/products/**
+                - id: categories
+                  uri: lb://PRODUCT
+                  predicates:
+                      - Path=/v1/categories/**
+                - id: live-product
+                  uri: lb://PRODUCT
+                  predicates:
+                      - Path=/v1/live-products/**
+                - id: product-questions
+                  uri: lb://PRODUCT
+                  predicates:
+                      - Path=/v1/product-questions/**
+                - id: chatbot
+                  uri: lb://CHATBOT
+                  predicates:
+                      - Path=/v1/chatbots/**
+                - id: user
+                  uri: lb://USER
+                  predicates:
+                      - Path=/v1/users/**
+                - id: chat
+                  uri: lb://CHAT
+                  predicates:
+                      - Path=/v1/chat/**
+                - id: stomp
+                  uri: lb://CHATBOT
+                  predicates:
+                      - Path=/stomp/chat/**
+                - id: analyze
+                  uri: lb://ANALYZE
+                  predicates:
+                      - Path=/v1/analyze/**
+                - id: block
+                  uri: lb://CHAT
+                  predicates:
+                      - Path=/chat/room/**

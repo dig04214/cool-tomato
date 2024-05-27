@@ -1,0 +1,50 @@
+server:
+    port: 8082
+
+spring:
+    application:
+        name: product
+    datasource:
+        url: jdbc:mysql://MASKING_URL
+        username: MAKING_USERNAME
+        password: MASKING_PASSWORD
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        properties:
+            hibernate:
+                ddl-auto: create
+                format_sql: true
+                show_sql: true
+    servlet:
+        multipart:
+            max-file-size: 5MB #파일의 용량 제한
+            max-request-size: 10MB #전체 최대 크기 용량 제한
+            resolve-lazily: true
+
+logging.level:
+    org.hibernate.orm.jdbc.bind: trace
+
+cloud:
+    aws:
+        s3:
+            bucket: wp-ht-s3
+        credentials:
+            access-key: MASKING_KEY
+            secret-key: MASKING_SECRET
+        region:
+            static: ap-northeast-2
+            auto: false
+        stack:
+            auto: false
+
+eureka:
+    instance:
+        disable-delta: true
+        instance-id: ${spring.cloud.client.hostname}:${spring.application.instance_id:${random.value}}
+        lease-renewal-interval-in-seconds: 3
+        lease-expiration-duration-in-seconds: 10
+    client:
+        register-with-eureka: true
+        fetch-registry: true
+        service-url:
+            defaultZone: http://MASTER:8761/eureka/
